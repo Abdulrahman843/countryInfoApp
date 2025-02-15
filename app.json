@@ -12,11 +12,12 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.abdulrahmnan843.CountryInfoApp",
+      "permissions": ["INTERNET"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.abdulrahmnan843.CountryInfoApp"
+      }
     },
     "web": {
       "bundler": "metro",

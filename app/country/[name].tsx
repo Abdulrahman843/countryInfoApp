@@ -111,7 +111,9 @@ export default function CountryDetails() {
             {country?.name?.common || "Unknown"}
           </Text>
           <Image
-            source={{ uri: country?.flags?.svg || country?.flags?.png || "https://via.placeholder.com/150" }}
+            source={{
+              uri: country?.flags?.png || country?.flags?.svg || "https://via.placeholder.com/150",
+            }}
             style={styles.flag}
             resizeMode="contain"
           />
