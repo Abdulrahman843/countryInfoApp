@@ -1,50 +1,134 @@
-# Welcome to your Expo app 👋
+# CountryInfoApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+CountryInfoApp is a React Native application that allows users to explore country details, including population, capital, region, continent, country code, and current leadership (if available). The app also supports light and dark themes for an improved user experience.
 
-## Get started
+## Features
 
-1. Install dependencies
+1. Search for countries from a global list.
 
-   ```bash
-   npm install
-   ```
+2. View detailed information about each country:
+. Name
+. Flag (image)
+. Capital city
+. Population
+. Region
+. Subregion
+. Continent
+. Country Code
+. States/Provinces (if available)
+. Current President (if available)
+. Currency
+. Languages
 
-2. Start the app
+3. Light & Dark Mode Toggle.
 
-   ```bash
-    npx expo start
-   ```
+4. Fully responsive UI.
 
-In the output, you'll find options to open the app in a
+5. Data fetched from the REST Countries API.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+6. Deployment on Appetize.io for browser-based testing.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Setup
 
-## Get a fresh project
+1. Prerequisites
 
-When you're ready, run:
+Ensure you have the following installed on your system:
 
-```bash
-npm run reset-project
-```
+Node.js (>=14.x)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npm or yarn
 
-## Learn more
+Expo CLI (npm install -g expo-cli)
 
-To learn more about developing your project with Expo, look at the following resources:
+Android Studio (for emulator testing) or a physical Android/iOS device
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. Clone the Repository
 
-## Join the community
+git clone https://github.com/Abdulrahman843/countryInfoApp.git
+cd CountryInfoApp
 
-Join our community of developers creating universal apps.
+3. Install Dependencies
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+
+OR
+
+yarn install
+
+4. Start the Development Server
+
+npx expo start
+
+This will launch the Expo Developer Tools. You can then:
+
+Scan the QR code with Expo Go (Android/iOS) to test on a physical device.
+
+Press a to run the app on an Android emulator.
+
+Press w to run the app on a web browser.
+
+## Running a Production Build
+
+To create an APK (Android) or IPA (iOS) build for deployment, use:
+
+eas build -p android --profile production
+
+This will generate a downloadable APK or AAB file.
+
+## Deploying to Appetize.io
+
+To test the app online using Appetize.io:
+
+Build the app
+
+eas build -p android --profile preview
+
+Upload the APK/AAB to Appetize.io
+
+Visit https://appetize.io/upload
+
+Upload the generated .apk file.
+
+Share the provided testing link with users. Mine for this project is: https://appetize.io/embed/b_hgzbfyqxwtwzhoyjnewgjciuce
+
+## Contributing
+
+I welcome contributions! Follow these steps:
+
+Fork the repository
+
+Create a new branch (git checkout -b feature-branch)
+
+Make your changes and commit (git commit -m "Added new feature")
+
+Push to GitHub (git push origin feature-branch)
+
+Open a Pull Request
+
+## Technologies Used
+
+React Native
+
+Expo
+
+TypeScript
+
+REST Countries API
+
+Appetize.io (for deployment)
+
+## License
+
+This project is open-source under the MIT License.
+
+## Contact
+
+For any inquiries, contact:
+
+GitHub: https://github.com/Abdulrahman843
+
+Email: energyspur@gmail.com
+
+
+***Enjoy exploring the world with CountryInfoApp!***
+
